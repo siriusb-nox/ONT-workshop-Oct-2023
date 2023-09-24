@@ -70,7 +70,7 @@ PATH=$PATH:/home/siriusb/softwares/genomics/ncbi-magicblast-1.5.0/bin/
 # ncbi blast
 PATH=$PATH:/home/siriusb/softwares/genomics/ncbi-blast-2.10.0+/bin/
 # SMARTdenovo
-PATH=$$PATH:/home/siriusb/softwares/genomics/
+PATH=$PATH:/home/siriusb/softwares/genomics/
 export PATH
 ```
 

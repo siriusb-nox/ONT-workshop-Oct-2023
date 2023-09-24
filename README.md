@@ -56,7 +56,7 @@ In any bioinformatics pipeline, it is essential to relate which programs the pip
 
 For this particular workshop, users with Dell Laptops should run the following lines to add the dependencies to ENV:
 
-````bash
+```bash
 # Canu
 PATH=$PATH:/home/siriusb/softwares/genomics/canu/canu-1.9/Linux-amd64/bin/
 # Racon 

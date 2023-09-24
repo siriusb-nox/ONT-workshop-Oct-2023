@@ -11,7 +11,7 @@ This tutorial is intended for users with a basic knowledge in programming and is
 
 This tutorial requires the following programs (dependencies) to run (it is highly recommended to have these programs installed before starting the tutorial). **Please make sure that the dependencies on which these programs run are also available**:
 
-1.[**NCBI blast:**](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download) This program allows the construction of blast databases, and the search (alignment) of DNA or AA sequences (fasta format) in blast databases. 
+1. [**NCBI blast:**](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download) This program allows the construction of blast databases, and the search (alignment) of DNA or AA sequences (fasta format) in blast databases. 
 
 2. [**NCBI magicblast:**](https://ncbi.github.io/magicblast/doc/download.html) This program allows the search of DNA sequences derived from massive sequencing (fasta or fastq format) in blast databases.
 

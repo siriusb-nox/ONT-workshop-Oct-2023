@@ -41,6 +41,7 @@ D. [**Genome search and/or assembly operations**](https://github.com/siriusb-nox
 **IMPORTANT:** The base data needed to run this tutorial is available at:
 
 ```
+**TODO: add local PATH to cloned repository**
 /directory/staff/Workshop-Oxford-Nanopore-Dec-2022/NGSdat/ # raw data for Cinchona and the mysterius organism (fastq)
 /directory/staff/Staff/Workshop-Oxford-Nanopore-Dec-2022/NanoPlot/ # data to run NanoPlot (text file)
 ```

@@ -49,3 +49,29 @@ D. [**Genome search and/or assembly operations**](https://github.com/siriusb-nox
 In any bioinformatics pipeline, it is essential to relate which programs the pipeline depends on and to know where the input files, etc. are located. To run this tutorial, you must copy this repository to a directory of your choice. To do this, please execute:
 
 `git clone https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022.git`
+
+**For users with programs installed in a UNIX environment on personal computers**, these can be entered in the current session (terminal) using the following command, for example:
+
+`PATH=$PATH:/directory/of/the/folder/programax`.
+
+For this particular workshop, users with Dell Laptops should run the following lines to add the dependencies to ENV:
+
+````bash
+# Canu
+PATH=$PATH:/home/siriusb/softwares/genomics/canu/canu-1.9/Linux-amd64/bin/
+# Racon 
+PATH=$PATH:/home/siriusb/softwares/genomics/racon/build/bin
+# Minimap2
+PATH=$PATH:/home/siriusb/softwares/genomics/minimap2-2.17_x64-linux/
+# samtools
+PATH=$PATH:/home/siriusb/softwares/genomics/samtools-1.10
+# magicblast
+PATH=$PATH:/home/siriusb/softwares/genomics/ncbi-magicblast-1.5.0/bin/
+# ncbi blast
+PATH=$PATH:/home/siriusb/softwares/genomics/ncbi-blast-2.10.0+/bin/
+# SMARTdenovo
+PATH=$$PATH:/home/siriusb/softwares/genomics/
+export PATH
+```
+## ACKNOWLEDGEMENTS
+Natalia Przelomska and Alexandre Antonelli produced unpublished data. Ilia Leitch procured ONT sequence data for Cinchona.

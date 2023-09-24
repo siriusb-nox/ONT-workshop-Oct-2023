@@ -52,7 +52,7 @@ In any bioinformatics pipeline, it is essential to relate which programs the pip
 
 **For users with programs installed in a UNIX environment on personal computers**, these can be entered in the current session (terminal) using the following command, for example:
 
-`PATH=$PATH:/directory/of/the/folder/programax`.
+`PATH=$PATH:/directory/of/the/folder/programax`
 
 For this particular workshop, users with Dell Laptops should run the following lines to add the dependencies to ENV:
 
@@ -73,5 +73,6 @@ PATH=$PATH:/home/siriusb/softwares/genomics/ncbi-blast-2.10.0+/bin/
 PATH=$$PATH:/home/siriusb/softwares/genomics/
 export PATH
 ```
+
 ## ACKNOWLEDGEMENTS
 Natalia Przelomska and Alexandre Antonelli produced unpublished data. Ilia Leitch procured ONT sequence data for Cinchona.

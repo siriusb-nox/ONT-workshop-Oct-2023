@@ -35,7 +35,7 @@ C. [**Correction and trimming of data**](https://github.com/siriusb-nox/Taller-O
 
 D. [**Genome search and/or assembly operations**](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/D_blast.md)
 
-Figure 1](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/IMG/pipeline_overview_v0_OP_15122022.png?raw=true)
+[Figure 1](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/IMG/pipeline_overview_v0_OP_15122022.png?raw=true)
 **Figure 1**: Simplified view of tutorial/pipeline
 
 **IMPORTANT:** The base data needed to run this tutorial is available at:

@@ -38,13 +38,7 @@ D. [**Genome search and/or assembly operations**](https://github.com/siriusb-nox
 ![Figure 1](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/IMG/pipeline_overview_v0_OP_15122022.png?raw=true)
 **Figure 1**: Simplified view of tutorial/pipeline
 
-**IMPORTANT:** The base data needed to run this tutorial is available at:
-
-```
-**TODO: add local PATH to cloned repository**
-/directory/staff/Workshop-Oxford-Nanopore-Dec-2022/NGSdat/ # raw data for Cinchona and the mysterius organism (fastq)
-/directory/staff/Staff/Workshop-Oxford-Nanopore-Dec-2022/NanoPlot/ # data to run NanoPlot (text file)
-```
+**IMPORTANT:** The base data needed to run this tutorial is available at the "NGS" and "NanoPlot" folders of this repo.
 
 ## 2.1. Pipeline configuration
 In any bioinformatics pipeline, it is essential to relate which programs the pipeline depends on and to know where the input files, etc. are located. To run this tutorial, you must copy this repository to a directory of your choice. To do this, please execute:
@@ -59,7 +53,7 @@ For this particular workshop, users with Dell Laptops should run the following l
 
 ```bash
 # Canu
-PATH=$PATH:/home/siriusb/softwares/genomics/canu/canu-1.9/Linux-amd64/bin/
+PATH=$PATH:/home/ontasia5/Softwares/canu/canu-1.9/Linux-amd64/bin/
 # Racon 
 PATH=$PATH:/home/siriusb/softwares/genomics/racon/build/bin
 # Minimap2

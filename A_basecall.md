@@ -59,5 +59,7 @@ In addition to the basecalled fastq files, `guppy` also produces a number of rep
 
 ## B. calling bases using alternative Open Access software
 There are not many programs available to base call nucleotides and produce fastq files from native fast5 files. One alternative to `guppy` is `dorado` software (available [here](https://github.com/nanoporetech/dorado)).
-`dorado` offers a wide range of analysis, including basecalling (single and duplex), modified basecalling (detection of modified bases) and simplex barcoding classification (useful when sequencing multiple samples per seq experiment). 
+
+`dorado` offers a wide range of analysis, including basecalling (single and duplex), modified basecalling (detection of modified bases) and simplex barcoding classification (useful when sequencing multiple samples per seq experiment).
+
 One requirement that dorado has is the usage of **POD5** input files, which are currently not produced by ONT. These files can be produced from fast5 files using the software pod5 (available [here](https://pod5-file-format.readthedocs.io/en/latest/docs/install.html#install)). 

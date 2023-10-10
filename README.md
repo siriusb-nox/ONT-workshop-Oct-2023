@@ -29,7 +29,7 @@ This tutorial is divided into four main steps:
 
 A. [**Base Calling**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/A_basecall.md)
 
-B. [**Data quality analysis**](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/B_NanoPlot.md)
+B. [**Data quality analysis**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/B_NanoPlot.md)
 
 C. [**Correction and trimming of data**](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/C_read_corrtrim_CANU.md)
 

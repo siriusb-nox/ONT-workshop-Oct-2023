@@ -1,114 +1,118 @@
 <p align="center">
-  <img src="https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/IMG/bash_logo_bashlogo.com.png" alt="bash logo from bash webpage"/>
+  <img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/bash_logo_bashlogo.com.png" alt="bash logo from bash webpage"/>
 </p>
   
-## Tutorial basico para navegar una terminal en ambientes UNIX
+## Basic tutorial for navigating a terminal in UNIX environments
 
-#### 1. Introducción
-UNIX es una familia de sistemas operativos (OS) desarrollado en 1960. Tal vez los OSs mas famosos son [Ubuntu](https://ubuntu.com/), [Linux](https://www.linux.org/) y [MacOS](https://www.apple.com/uk/macos/ventura/). En bioinformatica, _bash_ (i.e., "bourne Again Shell") o la _shell_ (i.e., terminal, o el traductor entre las operaciones que el computador hace y las instrucciones en lenguaje "humano") de UNIX es un lenguaje bastante usado ya que contiene una serie de programas basicos pero poderosos para manejar archivos de texto (e.g., secuencias fasta, fastq, genomas, etc). Adicionalmente, muchos programas en bioinformatica estan mas disponibles para ambientes UNIX que otras plataformas (e.g. DOS de Microsoft... urgh!). 
+#### 1. Introduction
+UNIX is a family of operating systems (OS) developed in 1960. Perhaps the most famous OSs are [Ubuntu](https://ubuntu.com/), [Linux](https://www.linux.org/) and [MacOS](https://www.apple.com/uk/macos/ventura/). In bioinformatics, _bash_ (i.e., "bourne Again Shell") or the _shell_ (i.e., terminal, or the translator between the operations the computer performs and the "human" language instructions) of UNIX is a widely used language as it contains a number of basic but powerful programs for handling text files (e.g., fasta sequences, fastq, genomes, etc.). Additionally, many programs in bioinformatics are more available for UNIX environments than other platforms (e.g. Microsoft's DOS... urgh!). 
 
-#### 2. Sintaxis
-La sintaxis de UNIX en la terminal es muy facil. En cualquier momento que en la terminal aparezca "$" o "%", es porque la terminal esta lista para recibir instrucciones.  Basicamente:
+#### 2. Syntax
+UNIX syntax in the terminal is very easy. Any time the terminal displays "$" or "%", the terminal is ready to receive instructions.  Basically:
 
-`$programa opcion1 opcion2 input > output`
+`$program option1 option2 input > output`.
 
-Las opciones en UNIX son usualmente parametros (en ingles _flags_) que permiten modificar el comportamiento usual/default  de un programa. Estas usualmente se especifican con un "-", Por ejemplo: 
+Options in UNIX are usually parameters (_flags_) that allow you to modify the usual/default behaviour of a program. They are usually specified with a "-", for example: 
 
-`ls` vs `ls -lrt` - Cual es la diferencia entre ambos comandos?
+`ls` vs `ls -lrt` - What is the difference between the two commands?
 
-#### 3. Programas esenciales para navegar la terminal en UNIX e interactuar/visualizar archivos
-Aquí una breve lista de programas basicos de UNIX que utilizaremos con mucha frequencia:
+#### 3. Essential programs for navigating the UNIX terminal and interacting/displaying files
+Here is a short list of basic UNIX programs that we will use often:
 
 #### 3.1 `cd`
-"Change directory" se usa para cambiar de una carpeta/directorio a otro. Por ejemplo:
+
+"Change directory" is used to change from one folder/directory to another. For example:
 
 ```bash
 cd
 ```
-Para subir una carpeta arriba, usar. Adicionalmente, _cd_ acpeta una direccion de directorio completa, p.ej **/home/usr/etc**:
+To move a folder up, use "cd ..". In addition, _cd_ will also folder a complete directory address, e.g. **/home/usr/etc**:
 
 ```bash
 cd ..
 cd /home/usr/etc
 ```
 
-### 3.2 `mkdir`
-Crea nuevas carpetas.  
+### 3.2 `mkdir`.
+Creates a new folders.  
 
 ```bash
-mkdir carpetanueva
+mkdir foldernew
 ```
-Varias carpetas se pueden crear de manera simultanea, p.ej.:
+Several folders can be created at the same time, e.g:
+
 ```bash
-mkdir carpeta1 carpeta2 carpeta3
+mkdir folder1 folder2 folder3 folder3
 ```
-Directorios completos se pueden crear con la opcion _-p_, así:
-```bash 
-mkdir -p /home/usr/foo/bla/
-```
-Carpetas se pueden tambien crear en subdirectorios ya existentes, usando una direccion ya existente. Por ejemplo, crear 'bioinf' en '/home/usr/foo/bla/':
+Entire directories can be created with the _-p_ option, like this:
 
 ```bash 
-mkdir /home/usr/foo/bla/bioinf
+mkdir -p /home/usr/usr/foo/bla/
+```
+Folders can also be created in existing subdirectories, using an existing address. For example, create 'bioinf' in '/home/usr/foo/bla/':
+
+```bash 
+mkdir /home/usr/usr/foo/bla/bioinf
 ```
 
-### 3.3 `pwd`
-Muestra el directorio en el que uno se encuentra
+### 3.3 ``pwd``
+Displays the directory you are in
+
 ```bash
 pwd
 ```
 
 ### 3.4 `ls`
-Hace un listado de los archivos o carpetas presentes en un directorio. `ls` tiene muchas opciones... Por ejemplo, la opcion `-l` presenta una lista detallada de los archivos/carpetas, mostrando info como tamaño exacto de los archivos, propietario, acceso, y fecha de modificacion.
+Lists the files or folders present in a directory. `ls` has a lot of options... For example, the `-l` option presents a detailed list of files/folders, showing info such as exact file size, owner, access, and modification date.
 
 ```bash
 ls
 ls -l
 ```
 
-### 3.5 `cat`
-Se usa para visualizar archivos "no binarios", e.g.: 
-* Ver archivos de texto en la terminal
-* Combinar archivos de texto  
+### 3.5 ``cat`
+Used to view "non-binary" files, e.g.: 
+* View text files in the terminal
+* Merge text files  
  
 ```bash
-cat archivo.txt
-cat archivo1.txt archivo2.txt
-cat archivo1.txt archivo2.txt > archivocombinado.txt
-cat < archivo1.txt > archivo2.txt
+cat file.txt
+cat file1.txt file2.txt
+cat file1.txt file2.txt > filecombinedfile.txt
+cat < file1.txt > file2.txt
 ```
 
-### 3.6 `less`
-Se usa para navigar archivos "no binarios", e.g.: 
+### 3.6 ``less`.
+Used for browsing ``non-binary`` files, e.g.: 
 
 ```bash
 less input.txt
 ```
-Por ejempo, `less`puede ser utilizado para dar una mirada rapida a un archivo fastq, asi (archivo disponible en el tutorial, primero descomprimir usando `gunzip`):
+For example, ``less` can be used to take a quick look at a fastq file, like this (file available in the tutorial, first unzip using `gunzip`):
 
 ```bash
-cat /directorio/personal/Taller-Oxford-Nanopore-Dec-2022/NGSdat/Cinchona_PAD61320_sizeSelect_1Kseq_99.fastq
+cat /directory/staff/Workshop-Oxford-Nanopore-Dec-2022/NGSdat/Cinchona_PAD61320_sizeSelect_1Kseq_99.fastq
 ```
 
-### 3.7 `grep`
-Este programa busca patrones de texto, incluyendo [_expresiones regulares_](https://sospedia.net/el-shell-bash-de-gnulinux-4-expresiones-regulares/). 
+### 3.7 ``grep``
+This program searches for text patterns, including [_regular expressions_](https://sospedia.net/el-shell-bash-de-gnulinux-4-expresiones-regulares/). 
 
 ```bash
-grep opcion1 opcion2 input
+grep option1 option2 input
 ```
 
-Por ejemplo, podemos buscar el nombre de una secuencia ("@7318713f-55b4-4e19-8fb1-4bd89b35568e") en especifico en un archivo fastq asi: 
+For example, we can search for a specific sequence name ("@7318713f-55b4-4e19-8fb1-4bd89b35568e") in a fastq file like this: 
 
 ```bash
 grep "^@7318713f-55b4-4e19-8fb1-4bd89b35568e" /directorio/personal/Taller-Oxford-Nanopore-Dec-2022/NGSdat/NGSdat/Cinchona_PAD61320_sizeSelect_1Kseq_99.fastq
 ```
 
-... hay muchos otros programas mas que nos permiten visualizar datos que recomendamos aprender. Algunos ejemplos están disponibles [aqui](https://www.biostars.org/p/17680/).
+... there are many other programs that allow us to visualise data that we recommend learning about. Some examples are available [here](https://www.biostars.org/p/17680/).
 
-### 3.8 `man`
-Este programa provee información detallada sobre programas basicos de UNIX.
+### 3.8 `man`.
+This program provides detailed information about basic UNIX programs.
 
 ```bash
-man programa
+man program
 man ls
 ```

@@ -33,7 +33,7 @@ cd ..
 cd /home/usr/etc
 ```
 
-### 3.2 `mkdir`.
+### 3.2 `mkdir`
 Creates a new folders.  
 
 ```bash
@@ -70,7 +70,7 @@ ls
 ls -l
 ```
 
-### 3.5 ``cat`
+### 3.5 ``cat``
 Used to view "non-binary" files, e.g.: 
 * View text files in the terminal
 * Merge text files  

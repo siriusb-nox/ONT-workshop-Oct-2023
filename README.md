@@ -53,19 +53,19 @@ For this particular workshop, users with Dell Laptops should run the following l
 
 ```bash
 # Canu
-PATH=$PATH:/home/ontasia5/Softwares/canu/canu-1.9/Linux-amd64/bin/
+PATH=$PATH:/home/ontasia*/Softwares/canu/canu-1.9/Linux-amd64/bin/
 # Racon 
-PATH=$PATH:/home/siriusb/softwares/genomics/racon/build/bin
+PATH=$PATH:/home/ontasia*/softwares/genomics/racon/build/bin
 # Minimap2
-PATH=$PATH:/home/siriusb/softwares/genomics/minimap2-2.17_x64-linux/
+PATH=$PATH:/home/ontasia*/softwares/genomics/minimap2-2.17_x64-linux/
 # samtools
-PATH=$PATH:/home/siriusb/softwares/genomics/samtools-1.10
+PATH=$PATH:/home/ontasia*/softwares/genomics/samtools-1.10
 # magicblast
-PATH=$PATH:/home/siriusb/softwares/genomics/ncbi-magicblast-1.5.0/bin/
+PATH=$PATH:/home/ontasia*/softwares/genomics/ncbi-magicblast-1.5.0/bin/
 # ncbi blast
-PATH=$PATH:/home/siriusb/softwares/genomics/ncbi-blast-2.10.0+/bin/
+PATH=$PATH:/home/ontasia*/softwares/genomics/ncbi-blast-2.10.0+/bin/
 # SMARTdenovo
-PATH=$PATH:/home/siriusb/softwares/genomics/
+PATH=$PATH:/home/ontasia*/softwares/genomics/
 export PATH
 ```
 

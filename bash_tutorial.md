@@ -55,7 +55,7 @@ Folders can also be created in existing subdirectories, using an existing addres
 mkdir /home/usr/usr/foo/bla/bioinf
 ```
 
-### 3.3 ``pwd``
+### 3.3 `pwd`
 Displays the directory you are in
 
 ```bash
@@ -70,7 +70,7 @@ ls
 ls -l
 ```
 
-### 3.5 ``cat``
+### 3.5 `cat`
 Used to view "non-binary" files, e.g.: 
 * View text files in the terminal
 * Merge text files  
@@ -82,7 +82,7 @@ cat file1.txt file2.txt > filecombinedfile.txt
 cat < file1.txt > file2.txt
 ```
 
-### 3.6 ``less`.
+### 3.6 `less`
 Used for browsing ``non-binary`` files, e.g.: 
 
 ```bash
@@ -94,7 +94,7 @@ For example, ``less` can be used to take a quick look at a fastq file, like this
 cat /directory/staff/Workshop-Oxford-Nanopore-Dec-2022/NGSdat/Cinchona_PAD61320_sizeSelect_1Kseq_99.fastq
 ```
 
-### 3.7 ``grep``
+### 3.7 `grep`
 This program searches for text patterns, including [_regular expressions_](https://sospedia.net/el-shell-bash-de-gnulinux-4-expresiones-regulares/). 
 
 ```bash
@@ -109,7 +109,7 @@ grep "^@7318713f-55b4-4e19-8fb1-4bd89b35568e" /directorio/personal/Taller-Oxford
 
 ... there are many other programs that allow us to visualise data that we recommend learning about. Some examples are available [here](https://www.biostars.org/p/17680/).
 
-### 3.8 `man`.
+### 3.8 `man`
 This program provides detailed information about basic UNIX programs.
 
 ```bash

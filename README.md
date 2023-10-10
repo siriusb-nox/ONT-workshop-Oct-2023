@@ -27,7 +27,7 @@ This tutorial requires the following programs/dependencies (it is highly recomme
 ## 2. Workshope structure
 This tutorial is divided into four main steps:
 
-A. [**Base Calling**](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/edit/main/A_basecall.md)
+A. [**Base Calling**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/A_basecall.md)
 
 B. [**Data quality analysis**](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/B_NanoPlot.md)
 

@@ -31,7 +31,7 @@ A. [**Base Calling**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/
 
 B. [**Data quality analysis**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/B_NanoPlot.md)
 
-C. [**Data trimming and correction**](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/C_read_corrtrim_CANU.md)
+C. [**Data trimming and correction**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/C_read_corrtrim_CANU.md)
 
 D. [**Genome search and/or assembly operations**](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/D_blast.md)
 

@@ -54,7 +54,7 @@ Basecalling completed successfully.
 In addition to the basecalled fastq files, `guppy` also produces a number of reports, including a compilation of sequencing stats in html format. An example can be seen [here](http://htmlpreview.github.io/?https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/guppy/report_FAU10861_20221116_1415_944237d8.html)
 
 <p align="center">
- <img src="https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/IMG/guppy_report_example.png" alt="A section of a guppy report on a seq experiment"/>
+ <img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/guppy_report_example_Art_altilis.png" alt="A section of a guppy report on a seq experiment"/>
 </p>
 
 ### Calling bases using alternative Open Access software

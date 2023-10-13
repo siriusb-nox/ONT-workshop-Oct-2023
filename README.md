@@ -33,7 +33,7 @@ B. [**Data quality analysis**](https://github.com/siriusb-nox/ONT-workshop-Oct-2
 
 C. [**Data trimming and correction**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/C_read_corrtrim_CANU.md)
 
-D. [**Genome search and/or assembly operations**](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/D_blast.md)
+D. [**Genome search and/or assembly operations**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/D_DataAnalysis_WGS_BLAST.md)
 
 ![Figure 1](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/IMG/pipeline_overview_v0_OP_15122022.png?raw=true)
 **Figure 1**: Simplified view of tutorial/pipeline

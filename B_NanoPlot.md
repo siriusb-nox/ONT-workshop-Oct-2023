@@ -15,7 +15,15 @@ An example of the output is the following plot, obtained from a previous sequenc
  <img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/LengthvsQualityScatterPlot_dot.png" alt="Length vs Sequence quality"/>
 </p>
 
-This graph indicates how the DNA sequence length produced by ONT relates to their quality (expressed in values similar to [Phred]:(https://en.wikipedia.org/wiki/Phred_quality_score)). Interestingly, many sequences have values below Phred 10 (i.e., probability of 1 in 10 nucleotides being called incorrectly). Incidentally, there are certain regions of the genome that are more difficult to sequence ([low complexity regions](https://academic.oup.com/nar/article/32/suppl_2/W628/1040725)), and ONT will tend to produce sequence data from these regions with lower qualities (i.e., higher probability of miscalled bases, see **recommended literature** section) if such regions are associated with high GC content:
+This graph indicates how the DNA sequence length produced by ONT relates to their quality (expressed in values similar to [Phred]:(https://en.wikipedia.org/wiki/Phred_quality_score). Interestingly, many sequences have values below Phred 10 (i.e., probability of 1 in 10 nucleotides being called incorrectly). But how does this compare with the newest v14 kits and R10 flowcells? Here is a lenght vs sequence quality plot derived from the the sequencing experiment "Art_altilis_DRY_WGS17".  
+
+<p align="center">
+ <img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/LengthvsQualityScatterPlot_dot_Art_altilis_DRY_WGS17.png" alt="Length vs Sequence quality"/>
+</p>
+
+
+
+Incidentally, there are certain regions of the genome that are more difficult to sequence ([low complexity regions](https://academic.oup.com/nar/article/32/suppl_2/W628/1040725)), and ONT will tend to produce sequence data from these regions with lower qualities (i.e., higher probability of miscalled bases, see **recommended literature** section) if such regions are associated with high GC content:
 
 <p align="centre">
  <img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/GC_qual_bias_ONT_Delahaye_Nicolas_2021_PLoSONE.png" alt="GC content and quality bias in ONT data"/>

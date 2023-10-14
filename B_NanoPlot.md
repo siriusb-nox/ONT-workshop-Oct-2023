@@ -74,6 +74,9 @@ Top 5 longest reads and their mean basecall quality score
 
 ```
 
+### ACTIVITY
+1. Produce a quality report from the file `sequencing_summary_FAT98192_deec7cb2_ec30cd82.txt.gz` available in your local directory (NanoPlot folder). Make sure that the output folder is called "saya_suka_sekali_genomics" :P 
+
 ## Recomended literature
 1. Delahaye C, Nicolas J. 2021. Sequencing DNA with nanopores: troubles and biases. PLoS ONE. https://doi.org/10.1371/journal.pone.0257521
 2. Orlov YL, Potapov VN. 2004. Complexity: an internet resource for analysis of DNA sequence complexity. Nuc. Ac. Res. 32. https://doi.org/10.1093%2Fnar%2Fgkh466

@@ -1,4 +1,4 @@
-## A. calling bases from fast5 files using `guppy` (legacy)
+## A. bascalling from fast5 files using `guppy` (legacy)
 
 `guppy` is one of the _official programs_ designed by Oxford Nanopore to translate the electrical signals contained in the raw FAST5 files into nucleotides (FASTQ files). This program is only accessible if you have a client account with ONT. This program has been succeded by `dorado` (see section below).
 Base calling is done directly when sequencing a library in the minION (i.e., _live basecalling_), but this process is computationally intensive and there are some advantages of base calling post sequencing (e.g., running highly accurate base calling models using a powerful computer).
@@ -58,7 +58,7 @@ In addition to the basecalled fastq files, `guppy` also produces a number of rep
  <img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/guppy_report_example_Art_altilis.png" alt="A section of a guppy report on a seq experiment"/>
 </p>
 
-### Calling bases using `dorado` (Open Access software)
+## Basecalling using `dorado` (Open Access software)
 This software is replacing `guppy` (available [here](https://github.com/nanoporetech/dorado)). `dorado` offers a wide range of analysis, including basecalling (single and duplex), modified basecalling (detection of modified bases) and simplex barcoding classification (useful when sequencing multiple samples per seq experiment). One important point is that, unlike guppy, this software is OA.
 
 One requirement that dorado has is the usage of **POD5** input files (now produced by the newest sequencing machines and chemistries, they will replace eventually *.fast5 files).
@@ -84,4 +84,7 @@ The program will repeat the following message:
 [2023-10-13 16:28:16.681] [info] > Finished
 ```
 
+### ACTIVITY
+1. Basecall again reads from the file FAT98192_pass_deec7cb2_ec30cd82_101.pod5, but using a quality threshold value of 20 (parameter `--min-qscore 20`).
+2. Count how many low quality reads were excluded by comparing the number of reads produced by the default settings command (i.e., `--min-qscore 0`) and by applying a quality threshold value  
 

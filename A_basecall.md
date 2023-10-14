@@ -8,7 +8,7 @@ The `guppy` installer files comes in two flavours: **CPU** (uses processor resou
 To run guppy, you can run the following command:
 
 ```bash
-ls /directory/staff/*.fast5 | guppy_basecaller -s . -c dna_r9.4.1_e8.1_hac.cfg --compress_fastq --trim_adapters -x auto --min_qscore 10
+ls *.fast5 | guppy_basecaller -s . -c dna_r9.4.1_e8.1_hac.cfg --compress_fastq --trim_adapters -x auto --min_qscore 10
 ```
 
 Where:

@@ -21,9 +21,7 @@ This graph indicates how the DNA sequence length produced by ONT relates to thei
  <img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/LengthvsQualityScatterPlot_dot_Art_altilis_DRY_WGS17.png" alt="Length vs Sequence quality"/>
 </p>
 
-
-
-Incidentally, there are certain regions of the genome that are more difficult to sequence ([low complexity regions](https://academic.oup.com/nar/article/32/suppl_2/W628/1040725)), and ONT will tend to produce sequence data from these regions with lower qualities (i.e., higher probability of miscalled bases, see **recommended literature** section) if such regions are associated with high GC content:
+Low quaility sequences will always happen, regardless of the sequencing technogloy. Incidentally, there are certain regions of the genome that are more difficult to sequence ([low complexity regions](https://academic.oup.com/nar/article/32/suppl_2/W628/1040725)), and ONT will tend to produce low sequence quality data from these regions (i.e., higher probability of miscalled bases, see **recommended literature** section) if such regions are associated with high GC content:
 
 <p align="centre">
  <img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/GC_qual_bias_ONT_Delahaye_Nicolas_2021_PLoSONE.png" alt="GC content and quality bias in ONT data"/>

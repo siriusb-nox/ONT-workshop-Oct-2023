@@ -1,7 +1,7 @@
 ## B. DATA QUALITY ANALYSIS WITH `NanoPlot`
 NanoPlot is a program designed to produce graphs and summaries of sequencing experiment results produced by ONT. The program uses as input a series of fastq files (using the `--fastq` option), or a text file produced by ONT (by default called "sequencing_summary.txt"). By parsing fastq files directly, you can produce graphs with more detailed information.
 
-In this tutorial, we will work with the text file "sequencing_summary.txt" (available [here](https://drive.google.com/file/d/1dy6Sf3TZVkq7S0GOjyy8UlWolUeFEsxv/view?usp=share_link)): 
+In this tutorial, we will work with the text file "sequencing_summary_FAT98192_deec7cb2_ec30cd82.txt.gz" (available [here](https://drive.google.com/file/d/1dy6Sf3TZVkq7S0GOjyy8UlWolUeFEsxv/view?usp=share_link)): 
 
 ```bash
 NanoPlot --summary sequencing_summary.txt --loglength --o summary-plots-log-transformed

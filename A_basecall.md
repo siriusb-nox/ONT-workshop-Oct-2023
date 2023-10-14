@@ -59,7 +59,7 @@ In addition to the basecalled fastq files, `guppy` also produces a number of rep
 </p>
 
 ## Basecalling using `dorado` (Open Access software)
-This software is replacing `guppy` (available [here](https://github.com/nanoporetech/dorado)). `dorado` offers a wide range of analysis, including basecalling (single and duplex), modified basecalling (detection of modified bases) and simplex barcoding classification (useful when sequencing multiple samples per seq experiment). One important point is that, unlike guppy, this software is OA.
+This software is replacing `guppy`. `dorado` (available [here](https://github.com/nanoporetech/dorado)) offers a wide range of analysis, including basecalling (single and duplex), modified basecalling (detection of modified bases) and simplex barcoding classification (useful when sequencing multiple samples per seq experiment). One important point is that, unlike guppy, this software is OA.
 
 One requirement that dorado has is the usage of **POD5** input files (now produced by the newest sequencing machines and chemistries, they will replace eventually *.fast5 files).
 

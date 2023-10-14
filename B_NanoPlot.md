@@ -7,9 +7,9 @@ In this tutorial, we will work with the text file "sequencing_summary_FAT98192_d
 NanoPlot --summary sequencing_summary.txt --loglength --o summary-plots-log-transformed
 ```
 
-As a result, the program will create a large number of plots (.png files) plus a compilation in html format. These files will be placed in a folder called "summary-plots-log-transformed" (available [here](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/tree/main/NanoPlot/), gzipped folder).
+As a result, the program will create a large number of plots (.png files) plus a compilation in html format. These files will be placed in a folder called "summary-plots-log-transformed" (available [here]([https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/tree/main/NanoPlot/](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/NanoPlot/summary-plots-log-transformed.zip)), zipped folder).
 
-An example of the output is the following:
+An example of the output is the following plot, obtained from a previous sequencing experiment, using an R9 flowcell+chemistry (legacy):
 
 <p align="center">
  <img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/LengthvsQualityScatterPlot_dot.png" alt="Length vs Sequence quality"/>

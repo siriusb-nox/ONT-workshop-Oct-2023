@@ -74,8 +74,7 @@ Top 5 longest reads and their mean basecall quality score
 
 ```
 
-The full report of a sequencing experiment conducted using DNA from our mystery organism is available [here](https://drive.google.com/file/d/1jPEOJwQUAObTKwK9kZybFwkhUSoayszy/view?usp=share_link), or in the folder of this [repository](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/tree/main/NanoPlot) - file named "summary-plots-log-transformed.zip" (first unzip with `gunzip`). 
-
 ## Recomended literature
-1. Delahaye C, Nicolas J. 2021. Sequencing DNA with nanopores: troubles and biases. PLoS ONE https://doi.org/10.1371/journal.pone.0257521
-2. Orlov YL, Potapov VN. 2004. Complexity: an internet resource for analysis of DNA sequence complexity. Nuc. Ac. Res. 32 https://doi.org/10.1093%2Fnar%2Fgkh466
+1. Delahaye C, Nicolas J. 2021. Sequencing DNA with nanopores: troubles and biases. PLoS ONE. https://doi.org/10.1371/journal.pone.0257521
+2. Orlov YL, Potapov VN. 2004. Complexity: an internet resource for analysis of DNA sequence complexity. Nuc. Ac. Res. 32. https://doi.org/10.1093%2Fnar%2Fgkh466
+3. Ni Y, Liu X, Simeneh Z, Yang M, Li R. 2023. Benchmarking of Nanopore R10.4 and R9.4.1 flow cells in single-cell whole-genome amplification and whole-genome shotgun sequencing. Comp. Str. Biotech. J. 21: 2353-2364. https://doi.org/10.1016/j.csbj.2023.03.038

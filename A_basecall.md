@@ -74,8 +74,18 @@ dorado download --model dna_r10.4.1_e8.2_400bps_hac@v4.2.0
 dorado basecaller --emit-fastq dna_r10.4.1_e8.2_400bps_hac@v4.2.0 FAT98192_pass_deec7cb2_ec30cd82_101.pod5 > FAT98192_pass_deec7cb2_ec30cd82_101.fastq
 ```
 
-The program will repeat the following message:
+Where:
+
+```bash
+--emit-fastq # produces as output *.fastq files
+dna_r10.4.1_e8.2_400bps_hac@v4.2.0 # indicates the model to call the bases (this is the most accurate model)
+FAT98192_pass_deec7cb2_ec30cd82_101.pod5 # input file
 ```
+
+**NB: The default command does not use any quality filtering threshold (i.e., `--min-qscore 0`)**
+
+The program will repeat the following message:
+```bash
 [2023-10-13 16:27:08.374] [info] > Creating basecall pipeline
 [2023-10-13 16:27:08.457] [info]  - set batch size to 1824
 [2023-10-13 16:28:16.576] [info] > Simplex reads basecalled: 4100

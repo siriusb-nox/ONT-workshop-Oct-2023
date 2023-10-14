@@ -63,6 +63,8 @@ This software is replacing `guppy`. `dorado` (available [here](https://github.co
 
 One requirement that dorado has is the usage of **POD5** input files (now produced by the newest sequencing machines and chemistries, they will replace eventually *.fast5 files).
 
+In this tutorial, we will work with the text file `FAT98192_pass_deec7cb2_ec30cd82_101.pod5` (available in your local folder `NGSdat/basecall`). 
+
 ```bash
 # check list of available models
 dorado download --list

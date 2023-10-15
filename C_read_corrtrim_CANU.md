@@ -27,11 +27,52 @@ genomeSize # indicates the size of the genome of the organism to be analysed (in
 
 We will use here a genome size of 160,000 bp because is the standard size of a plastid genome (also, a plastid genome of reference of A. altilis, available in [GenBank](https://www.ncbi.nlm.nih.gov/nucleotide/NC_059002.1), indicates that it has 160,184 bp).
 
-This command will output reads that have been corrected. Correction occurres by building overlap graphics.
+This command will output reads that have been corrected. Correction occurres by building overlap graphics (see Fig. 2 of this [paper](https://genome.cshlp.org/content/27/5/722/F2.expansion.html)). This commmand will also issue a report that looks like this:
 
-<p align="center">
- <img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/Coren_al_2017_GenomeRes.png" alt="overal error estimation executed by canu"/>
-</p>
+```bash
+[CORRECTION/LAYOUT]
+--                             original      original
+--                            raw reads     raw reads
+--   category                w/overlaps  w/o/overlaps
+--   -------------------- ------------- -------------
+--   Number of Reads               6030           544
+--   Number of Bases           33156409       1831339
+--   Coverage                   207.228        11.446
+--   Median                        4152          2563
+--   Mean                          5498          3366
+--   N50                           6467          4381
+--   Minimum                       1001             0
+--   Maximum                      62276         41616
+--   
+--                                        --------corrected---------  ----------rescued----------
+--                             evidence                     expected                     expected
+--   category                     reads            raw     corrected            raw     corrected
+--   -------------------- -------------  ------------- -------------  ------------- -------------
+--   Number of Reads               6026            491           491            133           133
+--   Number of Bases           31502614        6839053       6400196        1090108        291738
+--   Coverage                   196.891         42.744        40.001          6.813         1.823
+--   Median                        4036          11603         11237           5348          1914
+--   Mean                          5227          13928         13035           8196          2193
+--   N50                           6056          13582         12560          12933          2395
+--   Minimum                       1001           8831          8794           1523          1036
+--   Maximum                      56138          56138         38973          33858          6024
+--   
+--                        --------uncorrected--------
+--                                           expected
+--   category                       raw     corrected
+--   -------------------- ------------- -------------
+--   Number of Reads               5950          5950
+--   Number of Bases           27058587      14425376
+--   Coverage                   169.116        90.159
+--   Median                        3787          1928
+--   Mean                          4547          2424
+--   N50                           5166          4992
+--   Minimum                          0             0
+--   Maximum                      62276         48522
+--   
+--   Maximum Memory          1083529106
+```
+
 
 To run canu in filter mode (_trim_), use:
 
@@ -46,7 +87,7 @@ Where:
 -d # output directory
 ```
 
-
+This command will output reads that have been trimmed. Correction occurres by building overlap graphics.
 
 ```bash
 canu -assemble -p A_altilis_CP genomeSize=160k correctedErrorRate=0.14 -nanopore-corrected canu_trim.trimmedReads.fasta.gz -d ../canu_ass/

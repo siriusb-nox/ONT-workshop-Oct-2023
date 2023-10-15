@@ -1,6 +1,11 @@
-## D. ONT DATA ANALYSIS: BLAST 
+## D.1. ONT DATA ANALYSIS: BLAST 
 
-In this last section, we will demonstrate how to use ONT data (post correction/filtering). Perhaps one of the most widely used applications of ONT data is the identification of organisms by alignment methods, e.g. using [BLAST](https://www.ncbi.nlm.nih.gov/books/NBK279690/). In the following exercise, we will query a subset of our sukun sequences against a predetermined dataset. To do this we will run i) a local search by creating database in `makebklastdb` and `magicblast`.The database we will create will use as input plastid genome data of sukun. The idea here is to assess which proportion of our ONT data matches the plastid DNA. 
+In this last section, we will demonstrate real applications of ONT data in genomics: _A_) querying sequences (ONT reads) againsts a reference, and _B_) assemblying draft genomes.  
+
+Perhaps one of the most widely used applications of ONT data is the identification of organisms by alignment methods, e.g. using [BLAST](https://www.ncbi.nlm.nih.gov/books/NBK279690/). Blast takes as input nucleotide or aminoacid seaquences and aligns them against a database of sequences...
+In the following exercise, we will query our ONT reads against a reference genome of _Artocarpus heterophyllus_. To this end, we will: 
+1. Construct locally a blast 
+. To do this we will run i) a local search by creating database in `makeblastdb` and `magicblast`.The database we will create will use as input plastid genome data of sukun. The idea here is to assess which proportion of our ONT data matches the plastid DNA. 
 
 **NB: The files needed to run this section of the workshop are available in the folder [NGSdat](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/tree/main/NGSdat) of this repository.Also, please download the files available from this google [folder](https://drive.google.com/drive/folders/1zTgYw0CjRzhMqDqoMHpDEdq21G8P1ARv?usp=share_link).**
 
@@ -52,7 +57,7 @@ b20fe3db-c68c-4c1f-9a3b-c3b27ee92a6d	LC193510.1	97.478	1705	15	11	22	1703	129447
 b20fe3db-c68c-4c1f-9a3b-c3b27ee92a6d	NC_044644.1	96.487	1708	24	14	22	1703	104417	102720	0.0	2843
 b20fe3db-c68c-4c1f-9a3b-c3b27ee92a6d	NC_044644.1	96.487	1708	24	14	22	1703	132888	134585	0.0	2843
 ```
-## D. ONT DATA ANALYSIS: WHOLE GENOME ASSEMBLY (WGA)
+## D.2. ONT DATA ANALYSIS: WHOLE GENOME ASSEMBLY (WGA)
 
 Finally, assembling genomes with corrected ONT data is fairly straightforward, depending on which algorithm is used. In our case, we will run `SMARTdenovo`:
 

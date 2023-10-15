@@ -23,16 +23,23 @@ where:
 -dbtype # specify the type of database to be constructed (nucleotide, protein)
 ```
 
-3. Align the ONT reads against the local blast database created on step 2, using magicblast (unlike this program). An example . 
+3. Align the ONT reads against the local blast database created on step 2, using magicblast (unlike this program). An example of a command is the following: 
+
+```
+magicblast -query input_ONT.fastq -db refDB.out -out blast.search.out -outfmt tabular -no_unaligned -infmt fastq
+```
+
+where:
+
+```bash
+-query # your input ONT reads (fastq format)
+-db # your blast database (created on step 2)
+-out # your output namefile
+-outfmt # output format (table, SAM file)
+-infmt # type of input (fastq, fasta)
+```
 
 **NB: The files needed to run this section of the workshop are available in the folder [NGSdat](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/tree/main/NGSdat) of this repository.Also, please download the files available from this google [folder](https://drive.google.com/drive/folders/1zTgYw0CjRzhMqDqoMHpDEdq21G8P1ARv?usp=share_link).**
-
-Examples of commands:
-
-
-```
-magicblast -query archivo_fastq -db refgenomes_org.test_refDB -out ab.out -outfmt tabular -no_unaligned -infmt fastq
-```
 
 But we will also perform an NCBI remote search againts the "nu" database. **IMPORTANT: please create a free NCBI account to then freely access an NCBI API KEY, [here](https://account.ncbi.nlm.nih.gov/?back_url=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2F)**):
 

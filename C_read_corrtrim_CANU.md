@@ -73,7 +73,6 @@ This command will output reads that have been corrected. Correction occurres by 
 --   Maximum Memory          1083529106
 ```
 
-
 To run canu in filter mode (_trim_), use:
 
 ```bash
@@ -87,13 +86,18 @@ Where:
 -d # output directory
 ```
 
-This command will output reads that have been trimmed. Correction occurres by building overlap graphics.
+This command will output reads that have been trimmed. To assemble the plastid genome, try the following command:
 
 ```bash
 canu -assemble -p A_altilis_CP genomeSize=160k correctedErrorRate=0.14 -nanopore-corrected canu_trim.trimmedReads.fasta.gz -d ../canu_ass/
 ```
 
-
+Where:
+```bash
+-nanopore-corrected # indicates what type of inputs are being used
+-p # prefix of the output files
+-d # output directory
+```
 
 # Recommended literature
 1. Koren S, Walenz BP, Berlin K, Miller J, Bergman NH, Phillippy A. (2017)  Canu: scalable and accurate long-read assembly via adaptive k-mer weighting and repeat separation. Genome Res. 27: 722-736

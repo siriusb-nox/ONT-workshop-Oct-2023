@@ -7,12 +7,14 @@ There are several programs that can operate with ONT reads. In this workshop, we
 
 canu is a modular program, this means that each mode (_correction_, _trim_, _assembly_) can be run separately. This is recommended as in some instances the program may crash due to lack of resources, especially when assembling complex genomes and using lots of input data (e.g., nuclear genomes of +1 Gb). In this case, it is recommended to use `canu` for corrections and filtering, and other programs for assembling corrected and filtered data (e.g. SMARTdenovo). 
 
-In this section of the workshop, we will correct, trim and assemble a small subset of the _Artocarpus altilis_ dataset sequenced from a sample collected in a dry environment (WGS17). This will enable is to use `canu` for correction, trimming and assembly.
+In this section of the workshop, we will correct, trim and assemble a small subset of the _Artocarpus altilis_ dataset sequenced from a sample collected in a dry environment (WGS17). This will enable is to use `canu` for correction, trimming and assembly. We will aim to assemble the plastid genome of _A. altilis!_
+
+The data required to run this section is available in the folder `NGSdat/fastq_subset/` of your local directory. These are fastq files contain reads that match the plastid genome.
 
 To run the program in correction mode, use:
 
 ```bash
-canu -correct genomeSize=1.1g -nanopore-raw /dir/files/fastq/PAD61315_fastq/pass/*.fastq -p prefix_corrected -d directory_output 
+canu -correct genomeSize=160k -nanopore-raw *.fastq -p canu_corr -d ../canu_corr/
 ```
 
 Where:

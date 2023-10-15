@@ -4,7 +4,7 @@ In this last section, we will demonstrate real applications of ONT data in genom
 
 Perhaps one of the most widely used applications of ONT data is the identification of organisms by alignment methods, e.g. using [BLAST](https://www.ncbi.nlm.nih.gov/books/NBK279690/). Blast takes as input nucleotide or aminoacid seaquences and aligns them against a database of sequences. This database needs to be created through one of the applications of blast, `makeblastdb`. The alingment (search) is then conducted (depending on the input data) by `blastn`, `blastp`, or `magicblast`.
 
-# ACTIVITY:
+### ACTIVITY:
 To find out which proportion of the ONT data does correspond to _Artocarpus_ DNA, in the following exercise, we will query our ONT reads against the reference genome of _Artocarpus heterophyllus_. To this end, we will: 
 1. Construct locally a blast database
 . To do this we will run i) a local search by creating database in `makeblastdb` and `magicblast`.The database we will create will use as input plastid genome data of sukun. The idea here is to assess which proportion of our ONT data matches the plastid DNA. 

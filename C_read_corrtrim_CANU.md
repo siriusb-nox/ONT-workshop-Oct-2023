@@ -27,7 +27,11 @@ genomeSize # indicates the size of the genome of the organism to be analysed (in
 
 We will use here a genome size of 160,000 bp because is the standard size of a plastid genome (also, a plastid genome of reference of A. altilis, available in [GenBank](https://www.ncbi.nlm.nih.gov/nucleotide/NC_059002.1), indicates that it has 160,184 bp).
 
-This command will output reads that have been corrected. Correction occurres by overlapping reads.
+This command will output reads that have been corrected. Correction occurres by building overlap graphics.
+
+<p align="center">
+ <img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/Coren_al_2017_GenomeRes.png" alt="overal error estimation executed by canu"/>
+</p>
 
 To run canu in filter mode (_trim_), use:
 

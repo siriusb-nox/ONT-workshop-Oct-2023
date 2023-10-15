@@ -95,7 +95,7 @@ canu -assemble -p A_altilis_CP genomeSize=160k correctedErrorRate=0.14 -nanopore
 Where:
 ```bash
 -nanopore-corrected # indicates what type of inputs are being used
--p # prefix of the output files
+correctedErrorRate=0.14 # indicates the overalp error rate. The value here is adequate for corrected nanopore reads.
 -d # output directory
 ```
 

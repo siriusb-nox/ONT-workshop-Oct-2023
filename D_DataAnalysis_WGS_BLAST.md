@@ -5,7 +5,8 @@ In this last section, we will demonstrate real applications of ONT data in genom
 Perhaps one of the most widely used applications of ONT data is the identification of organisms by alignment methods, e.g. using [BLAST](https://www.ncbi.nlm.nih.gov/books/NBK279690/). Blast takes as input nucleotide or aminoacid seaquences and aligns them against a database of sequences. This database needs to be created through one of the applications of blast, `makeblastdb`. The alingment (search) is then conducted (depending on the input data) by `blastn`, `blastp`, or `magicblast`.
 
 ### ACTIVITY:
-To find out which proportion of the ONT data does correspond to _Artocarpus_ DNA, in the following exercise, we will query our ONT reads against the reference genome of _Artocarpus heterophyllus_. To this end, you will: 
+To find out which proportion of the ONT data does correspond to _Artocarpus_ DNA, in the following exercise, we will query our ONT reads against the reference nuclear genome of _Artocarpus heterophyllus_. To this end, you will: 
+
 1. Download the reference genome of _A. heterophyllus_ from the NCBI webpage (available [here:](https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_025403435.1/)).
 2. Construct locally a blast database from this reference genome. The basic command is:
 
@@ -13,7 +14,7 @@ To find out which proportion of the ONT data does correspond to _Artocarpus_ DNA
 makeblastdb -in refgenomes.fasta -out refDB.out -parse_seqids -dbtype nucl
 ```
 
-where
+where:
 
 ```bash
 -in # your input reference genome (fasta format)
@@ -22,10 +23,7 @@ where
 -dbtype # specify the type of database to be constructed (nucleotide, protein)
 ```
 
-
-
-3. 
-. To do this we will run i) a local search by creating database in `makeblastdb` and `magicblast`.The database we will create will use as input plastid genome data of sukun. The idea here is to assess which proportion of our ONT data matches the plastid DNA. 
+3. Align the ONT reads against the local blast database created on step 2, using magicblast (unlike this program). An example . 
 
 **NB: The files needed to run this section of the workshop are available in the folder [NGSdat](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/tree/main/NGSdat) of this repository.Also, please download the files available from this google [folder](https://drive.google.com/drive/folders/1zTgYw0CjRzhMqDqoMHpDEdq21G8P1ARv?usp=share_link).**
 

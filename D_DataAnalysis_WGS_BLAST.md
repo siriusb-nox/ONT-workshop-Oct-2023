@@ -23,7 +23,7 @@ where:
 -dbtype # specify the type of database to be constructed (nucleotide, protein)
 ```
 
-3. Align the ONT reads against the local blast database created on step 2, using magicblast (unlike this program). An example of a command is the following: 
+3. Align the ONT reads against the local blast database created on step 2, using `magicblast` (unlike `blastn`, this program can use *fastq inout files). An example of a command is the following: 
 
 ```
 magicblast -query input_ONT.fastq -db refDB.out -out blast.search.out -outfmt tabular -no_unaligned -infmt fastq

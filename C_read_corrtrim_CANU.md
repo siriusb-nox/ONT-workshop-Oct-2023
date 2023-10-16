@@ -1,4 +1,4 @@
-## C. ONT DATA CORRECTION AND FILTERING
+## C.1. ONT DATA CORRECTION AND FILTERING
 
 There are several programs that can operate with ONT reads. In this workshop, we will rely on `canu`, which is a program designed to perform ONT read correction, filtering (removal of bases or fragments from sequences with low quality) and scaffold assembly. The program **requires a lot of resources for its execution** (this depends on the size of the genomes, their complexity and the initial amount of data being used for its execution. **The program recommends starting the run with an amount of data that represents between 20x-60x+ theoretical coverage (e.g., Sun et al., 2021).** The program can operate with lower ammounts of input data but at the expense of higher error rates (higher number of miscalled bases on the read after correction analysis).
 
@@ -88,7 +88,11 @@ Where:
 
 This command will output reads that have been trimmed. 
 
-To assemble the plastid genome, try the following command:
+## C.2. ONT DATA ANALYSIS: WHOLE GENOME ASSEMBLY (WGA)
+
+Finally, assembling genomes with corrected ONT data can be more or less staright forward depending on the complexity of the genome (ploidy levels, proportion of repetitive elements).
+
+To assemble the plastid genome using `canu` and trimmed reads, try the following command:
 
 ```bash
 canu -assemble -p A_altilis_CP genomeSize=160k correctedErrorRate=0.14 -nanopore-corrected canu_trim.trimmedReads.fasta.gz -d ../canu_ass/
@@ -100,6 +104,15 @@ Where:
 correctedErrorRate=0.14 # indicates the overalp error rate. The value here is adequate for corrected nanopore reads.
 -d # output directory
 ```
+
+ In some instances, using `canu` for genome assembly might become prohibited when lots of input data are being used, or complex, large genomes are being assembled. In our case, we will run `SMARTdenovo`:
+
+```bash
+smartdenovo.pl -c 1 -t 64 -p prefijo_output /directorio/archivos/fastq.fastq > prefijo_output.mak
+
+make -f *.mak
+```
+
 
 # Recommended literature
 1. Koren S, Walenz BP, Berlin K, Miller J, Bergman NH, Phillippy A. (2017)  Canu: scalable and accurate long-read assembly via adaptive k-mer weighting and repeat separation. Genome Res. 27: 722-736

@@ -105,7 +105,7 @@ correctedErrorRate=0.14 # indicates the overalp error rate. The value here is ad
 -d # output directory
 ```
 
-In some instances, using `canu` for genome assembly might become prohibited when lots of input data are being used, or complex, large genomes are being assembled. In such case, a good alternative for conducting genome assembly is `SMARTdenovo`. This program runs considerably much faster than `canu`, with a [comparable performance](https://gigabytejournal.com/articles/15).
+In some instances, using `canu` for genome assembly might become prohibited when lots of input data are being used, or complex, large genomes are being assembled. In such case, a good alternative for conducting genome assembly is `SMARTdenovo`. This program runs considerably much faster than `canu`, with a [comparable performance](https://gigabytejournal.com/articles/15). It requires as input data raw or corrected ONT reads.
 
 <p align="center">
  <img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/Liu_al_2023_Gigabyte_SMARTdenovo.png" alt="Performance of SMARTdenovo"/>
@@ -127,6 +127,9 @@ Where:
 -J # min read length (default is 5000)
 -c # generate consensus sequence
 ```
+
+### ACTIVITY
+1. Attempt to assemble a draft genome from the trimmed `canu` reads, using SMARTdenovo. How different is the resulting genome assemnbly from that produced by `canu`?
 
 ## C.3. ONT DATA ANALYSIS: GENOME POLISHING
 When assembling genomes with ONT data, it is extremely important to ensure that the scaffolds are as accurate as possible. Here, erroneously sequenced based from ONT data might have remained could prevent better contiguity in the assembly. One way to improve accuracy is by "polishing" the genome, using short read sequencing data produced from the **exact same individual**. This is done in two steps. 

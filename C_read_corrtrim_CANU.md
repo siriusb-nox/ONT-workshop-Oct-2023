@@ -144,12 +144,22 @@ Where:
 -t # number of threads
 ```
 
-2. execute racon
+2. Correct the scaffolds using the SAM file produced by `minimap2`, and the ONT corrected reads produced by `canui`. We use `racon` to this end.
+
+```bash
 racon -t 64 ../Cpub_PAD61137_613125_corrTrim.correctedReads.fasta ../minimap2/Cpub_PAD6113_SMARTdenovo_DMOsnc_corrT
 rimReads_minimap2.sam Cpub_PAD61137_613125_corrReads.dmo.cns.fasta
+```
+
+Where:
+
+```bash
+-t # number of threads
+```
 
 # Recommended literature
 1. Koren S, Walenz BP, Berlin K, Miller J, Bergman NH, Phillippy A. (2017)  Canu: scalable and accurate long-read assembly via adaptive k-mer weighting and repeat separation. Genome Res. 27: 722-736
 2. Sun J, Li R, Chen C, Sigwart JD, Kocot KM. (2021) Benchmarking ONT read assemblers for high-quality molluscan genomes. Proc. B Phil Trans. https://doi.org/10.1098/rstb.2020.0160
 3. Liu H, Wu S, Li A, Ruan J. (2021). SMARTdenovo: a de-novo assembler using long noisy reads. Gigabyte. https://gigabytejournal.com/articles/15
+4. 
 

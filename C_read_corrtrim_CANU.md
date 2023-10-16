@@ -121,9 +121,11 @@ make -f *.mak
 
 Where:
 ```bash
--c # 
--t # correctedErrorRate=0.14 # indicates the overalp error rate. The value here is adequate for corrected nanopore reads.
--p # output prefix
+-p # output prefix 
+-t # number of threads (default is 8)
+-k # k-mer length for overlapping (default is 16)
+-J # min read length (default is 5000)
+-c # generate consensus sequence
 ```
 
 

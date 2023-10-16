@@ -105,12 +105,25 @@ correctedErrorRate=0.14 # indicates the overalp error rate. The value here is ad
 -d # output directory
 ```
 
- In some instances, using `canu` for genome assembly might become prohibited when lots of input data are being used, or complex, large genomes are being assembled. In our case, we will run `SMARTdenovo`:
+In some instances, using `canu` for genome assembly might become prohibited when lots of input data are being used, or complex, large genomes are being assembled. In such case, a good alternative for conducting genome assembly is `SMARTdenovo`. This program runs considerably much faster than `canu`, with a [comparable performance](https://gigabytejournal.com/articles/15).
+
+<p align="center">
+ <img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/Liu_al_2023_Gigabyte_SMARTdenovo.png" alt="Performance of SMARTdenovo"/>
+</p>
+
+To run `SMARTdenovo`, use the following command.
 
 ```bash
 smartdenovo.pl -c 1 -t 64 -p prefijo_output /directorio/archivos/fastq.fastq > prefijo_output.mak
 
 make -f *.mak
+```
+
+Where:
+```bash
+-c # 
+-t # correctedErrorRate=0.14 # indicates the overalp error rate. The value here is adequate for corrected nanopore reads.
+-p # output prefix
 ```
 
 

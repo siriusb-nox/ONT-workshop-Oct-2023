@@ -131,27 +131,20 @@ Where:
 ## C.3. ONT DATA ANALYSIS: GENOME POLISHING
 When assembling genomes with ONT data, it is extremely important to ensure that the scaffolds are as accurate as possible. Here, erroneously sequenced based from ONT data might have remained could prevent better contiguity in the assembly. One way to improve accuracy is by "polishing" the genome, using short read sequencing data produced from the **exact same individual**. This is done in two steps. 
 
-1. Mapping the illumina sequencing data against the genome assembly, using read aligners, like _minimap2_. This programs generates an index files with coordinates of the reads mapped against the genome assembly. Here, every read has a quality mapping score, and information on on when bases from the short reads disagree with the reference. THe ouput of this command is a _SAM_ file (read [here](https://en.wikipedia.org/wiki/SAM_(file_format)) more about SAM files). **In this workshop, We wont run these commands because we lack the illumina sequencing data**. To run _minimap2_, execute:
+1. Mapping the illumina sequencing data against the genome assembly, using read aligners, like `minimap2`. This programs generates an index files with coordinates of the reads mapped against the genome assembly. Here, every read has a quality mapping score, and information on on when bases from the short reads disagree with the reference. THe ouput of this command is a _SAM_ file (read [here](https://en.wikipedia.org/wiki/SAM_(file_format)) more about SAM files). **In this workshop, We wont run these commands because we lack the illumina sequencing data**. To run `minimap2`, execute:
 
 ```bash
 minimap2 -ax sr -t 64 ../genome.assembly.fasta input_illumina_read_files_R1_001.fastq input_illumina_read_files_R2_002.fastq > output_minimap.sam
 ```
 
 Where:
+
 ```bash
--p # output prefix 
--t # number of threads (default is 8)
--k # k-mer length for overlapping (default is 16)
--J # min read length (default is 5000)
--c # generate consensus sequence
+-ax # map short reads. 
+-t # number of threads
 ```
 
-
-2. 
-
-
-
-# execute racon
+2. execute racon
 racon -t 64 ../Cpub_PAD61137_613125_corrTrim.correctedReads.fasta ../minimap2/Cpub_PAD6113_SMARTdenovo_DMOsnc_corrT
 rimReads_minimap2.sam Cpub_PAD61137_613125_corrReads.dmo.cns.fasta
 

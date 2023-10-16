@@ -29,11 +29,11 @@ A. [**Base Calling**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/
 
 B. [**Data quality analysis**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/B_NanoPlot.md)
 
-C. [**Data trimming and correction**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/C_read_corrtrim_CANU.md)
+C. [**Data trimming, correction and genome assembly**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/C_read_corrtrim_CANU.md)
 
-D. [**Genome search and/or assembly operations**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/D_DataAnalysis_WGS_BLAST.md)
+D. [**Genome search and/or annotation operations**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/D_DataAnalysis_WGS_BLAST.md)
 
-![Figure 1](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/pipeline_overview_v0_OP_15102023.png?raw=true)
+![Figure 1](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/pipeline_overview_v0_OP_16102023.png?raw=true)
 **Figure 1**: Simplified view of tutorial/pipeline
 
 **IMPORTANT:** The base data needed to run this tutorial is available at the "NGS" and "NanoPlot" folders of this repo.

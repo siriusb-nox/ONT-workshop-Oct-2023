@@ -128,7 +128,23 @@ Where:
 -c # generate consensus sequence
 ```
 
-## C.3. ONT DATA ANALYSIS: WHOLE GENOME ASSEMBLY (WGA)
+## C.3. ONT DATA ANALYSIS: GENOME POLISHING
+When assembling genomes with ONT data, it is extremely important to ensure that the scaffolds are as accurate as possible. Here, erroneously sequenced based from ONT data might have remained could prevent better contiguity in the assembly. One way to improve accuracy is by "polishing" the genome, using short read sequencing data produced from the **exact same individual**. This is done in two steps. 
+
+1. Mapping the illumina sequencing data against the genome assembly, using read aligners, like _minimap2_. This programs generates an index files with coordinates of the reads mapped against the genome assembly. Here, every read has a quality mapping score, and information on on when bases from the short reads disagree with the reference. THe ouput of this command is a _SAM_ file (read [here](https://en.wikipedia.org/wiki/SAM_(file_format)) more about SAM files). **In this workshop, We wont run these commands because we lack the illumina sequencing data**.
+
+2. 
+
+
+# ru minimap with illumina files
+minimap2 -ax sr -t 64 ../mergedAss_sizeSelec_4PAD.dmo.cns /mnt/NOX1/operez/Cinchona_Genome/illumina/raw_MT/Cinchona
+_pubescens_data/P9018/P9018_110/02-FASTQ/180406_ST-E00214_0213_AHJ5M7CCXY/unzipped/P9018_110_S36_L007_R1_001.fastq 
+/mnt/NOX1/operez/Cinchona_Genome/illumina/raw_MT/Cinchona_pubescens_data/P9018/P9018_110/02-FASTQ/180406_ST-E00214_
+0213_AHJ5M7CCXY/unzipped/P9018_110_S36_L007_R2_001.fastq > mergedAss_sizeSelec_4PAD_P9018_3KbpINSERT_minimap.sam  
+
+# execute racon
+racon -t 64 ../Cpub_PAD61137_613125_corrTrim.correctedReads.fasta ../minimap2/Cpub_PAD6113_SMARTdenovo_DMOsnc_corrT
+rimReads_minimap2.sam Cpub_PAD61137_613125_corrReads.dmo.cns.fasta
 
 # Recommended literature
 1. Koren S, Walenz BP, Berlin K, Miller J, Bergman NH, Phillippy A. (2017)  Canu: scalable and accurate long-read assembly via adaptive k-mer weighting and repeat separation. Genome Res. 27: 722-736

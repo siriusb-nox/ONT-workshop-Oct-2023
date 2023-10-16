@@ -114,7 +114,7 @@ In some instances, using `canu` for genome assembly might become prohibited when
 To run `SMARTdenovo`, use the following command.
 
 ```bash
-smartdenovo.pl -c 1 -t 64 -p prefijo_output /directorio/archivos/fastq.fastq > prefijo_output.mak
+smartdenovo.pl -c 1 -t 64 -p prefix_output *fastq.fastq > prefix_output.mak
 
 make -f *.mak
 ```
@@ -128,7 +128,10 @@ Where:
 -c # generate consensus sequence
 ```
 
+## C.3. ONT DATA ANALYSIS: WHOLE GENOME ASSEMBLY (WGA)
 
 # Recommended literature
 1. Koren S, Walenz BP, Berlin K, Miller J, Bergman NH, Phillippy A. (2017)  Canu: scalable and accurate long-read assembly via adaptive k-mer weighting and repeat separation. Genome Res. 27: 722-736
 2. Sun J, Li R, Chen C, Sigwart JD, Kocot KM. (2021) Benchmarking ONT read assemblers for high-quality molluscan genomes. Proc. B Phil Trans. https://doi.org/10.1098/rstb.2020.0160
+3. Liu H, Wu S, Li A, Ruan J. (2021). SMARTdenovo: a de-novo assembler using long noisy reads. Gigabyte. https://gigabytejournal.com/articles/15
+

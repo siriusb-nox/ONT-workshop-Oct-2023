@@ -160,5 +160,6 @@ Where:
 1. Koren S, Walenz BP, Berlin K, Miller J, Bergman NH, Phillippy A. (2017)  Canu: scalable and accurate long-read assembly via adaptive k-mer weighting and repeat separation. Genome Res. 27: 722-736
 2. Sun J, Li R, Chen C, Sigwart JD, Kocot KM. (2021) Benchmarking ONT read assemblers for high-quality molluscan genomes. Proc. B Phil Trans. https://doi.org/10.1098/rstb.2020.0160
 3. Liu H, Wu S, Li A, Ruan J. (2021). SMARTdenovo: a de-novo assembler using long noisy reads. Gigabyte. https://gigabytejournal.com/articles/15
-4. 
+4. Vaser R, Sovic I, Nagarajan N, Sikic M. (2017). Fast and accurate de novo genome assembly from long uncorrected reads. Genome Res. https://genome.cshlp.org/content/early/2017/01/18/gr.214270.116
+5.  Li H. (2018). Minimap2: pairwise alignment for nucleotide sequences. Bioinformatics, 34:3094-3100. https://academic.oup.com/bioinformatics/article/34/18/3094/4994778?login=true
 

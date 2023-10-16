@@ -81,12 +81,4 @@ b20fe3db-c68c-4c1f-9a3b-c3b27ee92a6d	LC193510.1	97.478	1705	15	11	22	1703	129447
 b20fe3db-c68c-4c1f-9a3b-c3b27ee92a6d	NC_044644.1	96.487	1708	24	14	22	1703	104417	102720	0.0	2843
 b20fe3db-c68c-4c1f-9a3b-c3b27ee92a6d	NC_044644.1	96.487	1708	24	14	22	1703	132888	134585	0.0	2843
 ```
-## D.2. ONT DATA ANALYSIS: WHOLE GENOME ASSEMBLY (WGA)
 
-Finally, assembling genomes with corrected ONT data is fairly straightforward, depending on which algorithm is used. In our case, we will run `SMARTdenovo`:
-
-```bash
-/home/siriusb/softwares/genomics/smartdenovo/smartdenovo.pl -c 1 -t 64 -p prefijo_output /directorio/archivos/fastq.fastq > prefijo_output.mak
-
-make -f *.mak
-```

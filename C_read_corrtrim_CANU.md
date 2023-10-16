@@ -144,11 +144,10 @@ Where:
 -t # number of threads
 ```
 
-2. Correct the scaffolds using the SAM file produced by `minimap2`, and the ONT corrected reads produced by `canui`. We use `racon` to this end.
+2. Correct the scaffolds using the SAM file produced by `minimap2`, and the ONT filtered and corrected reads (produced by `canu`). We use `racon` to this end.
 
 ```bash
-racon -t 64 ../Cpub_PAD61137_613125_corrTrim.correctedReads.fasta ../minimap2/Cpub_PAD6113_SMARTdenovo_DMOsnc_corrT
-rimReads_minimap2.sam Cpub_PAD61137_613125_corrReads.dmo.cns.fasta
+racon -t 64 corrected.trimmed.canu.reads.fasta output_minimap.sam genome.assembly.smartdenovo.fasta
 ```
 
 Where:

@@ -5,7 +5,9 @@ In this last section, we will demonstrate real applications of ONT data in genom
 Perhaps one of the most widely used applications of ONT data is the identification of organisms by alignment methods, e.g. using [BLAST](https://www.ncbi.nlm.nih.gov/books/NBK279690/). Blast takes as input nucleotide or aminoacid seaquences and aligns them against a database of sequences. This database needs to be created through one of the applications of blast, `makeblastdb`. The alingment (search) is then conducted (depending on the input data) by `blastn`, `blastp`, or `magicblast`.
 
 ### ACTIVITY:
-To find out which proportion of the ONT data does correspond to _Artocarpus_ DNA, in the following exercise, we will query our ONT reads against the reference nuclear genome of _Artocarpus heterophyllus_. To this end, you will: 
+To find out which proportion of the ONT data does correspond to _Artocarpus_ DNA, in the following exercise, we will query our ONT reads against the reference nuclear genome of _Artocarpus heterophyllus_. **NB: The files needed to run this section of the workshop are available in the folder [NGSdat](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/tree/main/NGSdat) of this repository. Also, please download the files available from this google [folder](https://drive.google.com/drive/folders/1zTgYw0CjRzhMqDqoMHpDEdq21G8P1ARv?usp=share_link).**
+
+To this end, you will: 
 
 1. Download the reference genome of _A. heterophyllus_ from the NCBI webpage (available [here:](https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_025403435.1/)).
 2. Construct locally a blast database from this reference genome. The basic command is:
@@ -23,7 +25,7 @@ where:
 -dbtype # specify the type of database to be constructed (nucleotide, protein)
 ```
 
-3. Align the ONT reads against the local blast database created on step 2, using `magicblast` (unlike `blastn`, this program can use *fastq inout files). An example of a command is the following: 
+3.a. Align the ONT reads against the local blast database created on step 2, using `magicblast` (unlike `blastn`, this program can use *fastq inout files). An example of a command is the following: 
 
 ```
 magicblast -query input_ONT.fastq -db refDB.out -out blast.search.out -outfmt tabular -no_unaligned -infmt fastq
@@ -39,7 +41,7 @@ where:
 -infmt # type of input (fastq, fasta)
 ```
 
-THe output should be a tab delimited file, and will look like this.
+The output should be a tab delimited file, and will look like this.
 
 ```bash
 # MAGICBLAST 1.7.2
@@ -49,9 +51,9 @@ THe output should be a tab delimited file, and will look like this.
 8e298d68-42ba-4ee1-9641-c39f4bc490a1    NC_059002.1     74.7208 0       0       0       28      1004    55340   54373   0       99      572     plus    minus   13962   61G-26GA1TG2-A2GA27C-G-1TA2CA26GC3C-35A-21-A16-T-A8T-T-G-1CA18AG2CAAG1-A7AT1T-18_216_%210%106CT62-G87-A31CAAG126C-T-19-T26   1       -       1:1     AGCAATACGTAACTGAACGAAGCCACA     CCTCGTGTCCAAAGTATGAAGATTTCCCTA  -       -       572
 ```
 
-**NB: The files needed to run this section of the workshop are available in the folder [NGSdat](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/tree/main/NGSdat) of this repository.Also, please download the files available from this google [folder](https://drive.google.com/drive/folders/1zTgYw0CjRzhMqDqoMHpDEdq21G8P1ARv?usp=share_link).**
+3.b. Align the ONT reads, using NCBI remote services. To this end, we need to rely on the blast tool of NCBI, because is the only capable of searching across multiple databases. The *fastq reads need to be converted first to fasta format. 
 
-But we will also perform an NCBI remote search againts the "nu" database. **IMPORTANT: please create a free NCBI account to then freely access an NCBI API KEY, [here](https://account.ncbi.nlm.nih.gov/?back_url=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2F)**):
+We will try to find out how many of the ONT read data does mat NCBI remote search againts the "nu" database. 
 
 ```bash
 export NCBI_API_KEY=09ddca88b438c887b83f8d58fcc890c321XX

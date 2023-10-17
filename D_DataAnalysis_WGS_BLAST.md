@@ -39,6 +39,16 @@ where:
 -infmt # type of input (fastq, fasta)
 ```
 
+THe output should be a tab delimited file, and will look like this.
+
+```bash
+# MAGICBLAST 1.7.2
+# magicblast -query FAT98192_pass_deec7cb2_ec30cd82_9.fastq -db ../../../blastDB/Art_altilis_CP_NC_059002.1.blastdb -out /Users/o.perez-escobar/Documents/JORMUNGANDR/Projects/ONT_DarwinBogor_2023/GitHub/ONT_JAVA_2023/ONT-workshop-Oct-2023/NGSdat/magicblast_out/FAT98192_pass_deec7cb2_ec30cd82_9.out -outfmt tabular -no_unaligned -infmt fastq 
+# Fields: query acc.    reference acc.  % identity      not used        not used        not used        query start     query end       reference start reference end   not used        not used        score   query strand reference strand        query length    BTOP    num placements  not used        compartment     left overhang   right overhang  mate reference  mate ref. start composite score
+68dc22d3-44d6-593f-9dd1-e55f86169c77    NC_059002.1     99.2769 0       0       0       35      1414    118851  120231  0       99      1333    plus    plus    1415    82-T-A339A-711AG2AGTC3-T64TAC-168CT4    1            -       1:0     GCAATACGTAACTGAACCAAGTACAGGCAA  T       -       -       1333
+8e298d68-42ba-4ee1-9641-c39f4bc490a1    NC_059002.1     74.7208 0       0       0       28      1004    55340   54373   0       99      572     plus    minus   13962   61G-26GA1TG2-A2GA27C-G-1TA2CA26GC3C-35A-21-A16-T-A8T-T-G-1CA18AG2CAAG1-A7AT1T-18_216_%210%106CT62-G87-A31CAAG126C-T-19-T26   1       -       1:1     AGCAATACGTAACTGAACGAAGCCACA     CCTCGTGTCCAAAGTATGAAGATTTCCCTA  -       -       572
+```
+
 **NB: The files needed to run this section of the workshop are available in the folder [NGSdat](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/tree/main/NGSdat) of this repository.Also, please download the files available from this google [folder](https://drive.google.com/drive/folders/1zTgYw0CjRzhMqDqoMHpDEdq21G8P1ARv?usp=share_link).**
 
 But we will also perform an NCBI remote search againts the "nu" database. **IMPORTANT: please create a free NCBI account to then freely access an NCBI API KEY, [here](https://account.ncbi.nlm.nih.gov/?back_url=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2F)**):
@@ -62,23 +72,10 @@ The output of this analysis will look lije this:
 231acd9d-2063-4509-9ccc-c822ff4f66d7	MF860862.1	94.802	731	22	5	33	756	737	16	0.0	1130
 231acd9d-2063-4509-9ccc-c822ff4f66d7	MF860864.1	94.665	731	22	6	33	756	736	16	0.0	1114
 0d3193bd-6dca-4f57-bf00-665e9cc55904	MW375130.1	97.489	1314	20	7	30	1339	36038	37342	0.0	2300
-0d3193bd-6dca-4f57-bf00-665e9cc55904	MW375125.1	97.184	1314	22	7	31	1339	36381	37684	0.0	2272
-0d3193bd-6dca-4f57-bf00-665e9cc55904	MW375127.1	97.260	1314	22	8	31	1339	36864	38168	0.0	2268
-0d3193bd-6dca-4f57-bf00-665e9cc55904	NC_043905.1	97.108	1314	24	8	31	1339	35271	36575	0.0	2252
-0d3193bd-6dca-4f57-bf00-665e9cc55904	MH979332.1	97.108	1314	24	8	31	1339	35271	36575	0.0	2252
-44e5b206-fb13-48d7-9cdc-0b2c51fdc921	KP205432.1	94.507	1693	38	32	27	1683	92658	90985	0.0	2411
-44e5b206-fb13-48d7-9cdc-0b2c51fdc921	KP205432.1	94.507	1693	38	32	27	1683	149723	151396	0.0	2411
-44e5b206-fb13-48d7-9cdc-0b2c51fdc921	MW375129.1	94.507	1693	38	32	27	1683	92824	91151	0.0	2411
-44e5b206-fb13-48d7-9cdc-0b2c51fdc921	MW375129.1	94.507	1693	38	32	27	1683	149917	151590	0.0	2411
-44e5b206-fb13-48d7-9cdc-0b2c51fdc921	MW375125.1	94.507	1693	38	32	27	1683	92767	91094	0.0	2411
-44e5b206-fb13-48d7-9cdc-0b2c51fdc921	MW375125.1	94.507	1693	38	32	27	1683	149860	151533	0.0	2411
-44e5b206-fb13-48d7-9cdc-0b2c51fdc921	MW375130.1	94.448	1693	39	32	27	1683	91332	89659	0.0	2403
-44e5b206-fb13-48d7-9cdc-0b2c51fdc921	MW375130.1	94.448	1693	39	32	27	1683	142685	144358	0.0	2403
-44e5b206-fb13-48d7-9cdc-0b2c51fdc921	MW375124.1	93.938	1699	42	31	27	1683	92255	90576	0.0	2365
-44e5b206-fb13-48d7-9cdc-0b2c51fdc921	MW375124.1	93.938	1699	42	31	27	1683	146901	148580	0.0	2365
-b20fe3db-c68c-4c1f-9a3b-c3b27ee92a6d	LC193510.1	97.478	1705	15	11	22	1703	105931	104232	0.0	2985
-b20fe3db-c68c-4c1f-9a3b-c3b27ee92a6d	LC193510.1	97.478	1705	15	11	22	1703	129447	131146	0.0	2985
-b20fe3db-c68c-4c1f-9a3b-c3b27ee92a6d	NC_044644.1	96.487	1708	24	14	22	1703	104417	102720	0.0	2843
-b20fe3db-c68c-4c1f-9a3b-c3b27ee92a6d	NC_044644.1	96.487	1708	24	14	22	1703	132888	134585	0.0	2843
 ```
+
+## D.1. ONT DATA ANALYSIS: PLASTID GENOME ANNOTATION
+
+
+
 

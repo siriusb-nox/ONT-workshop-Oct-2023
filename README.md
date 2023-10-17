@@ -68,5 +68,3 @@ PATH=$PATH:/home/ontasia*/softwares/genomics/
 export PATH
 ```
 
-## ACKNOWLEDGEMENTS
-Natalia Przelomska and Alexandre Antonelli produced unpublished data. Ilia Leitch procured ONT sequence data for Cinchona.

@@ -12,7 +12,7 @@ This tutorial is intended for users with a basic knowledge in programming and is
 This tutorial requires the following programs/dependencies (it is highly recommended to have these installed before starting the tutorial). **Please make sure that the dependencies on which these programs run are also available**:
 
 1. [**NCBI blast:**](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download) This program builds blast databases, which are required for searches of DNA/AA sequences in blast databases. 
-2. [**NCBI magicblast:**](https://ncbi.github.io/magicblast/doc/download.html) This program conducts DNA/AA sequence searches derived from illumina/Nanopore sequencing experioments (in fasta or fastq format) against blast databases.
+2. [**NCBI magicblast:**](https://ncbi.github.io/magicblast/doc/download.html) This program conducts DNA/AA sequence searches derived from illumina/Nanopore sequencing experioments (in fasta or fastq format) against blast databases. **IMPORTANT: please create a free NCBI account to then freely access an NCBI API KEY [here](https://account.ncbi.nlm.nih.gov/?back_url=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2F). This is needed to perform remote (online) sequence queries.**
 3. [**CANU:**](https://github.com/marbl/canu) this program allows the correction and filtering of ONT/PacBio sequences.  
 4. [**SMARTdenovo:**](https://github.com/ruanjue/smartdenovo) this program assembles de-novo corrected and trimmed ONT/PacBio sequences.
 5. [**minimap2:**](https://github.com/lh3/minimap2) this programs conducts pairwaise genome alignments, or short-short, short-long read mapping. This is required for genome polishing.

@@ -41,7 +41,7 @@ D. [**Genome search and/or annotation operations**](https://github.com/siriusb-n
 ## 2.1. Pipeline configuration
 In any bioinformatics pipeline, it is essential to relate which programs the pipeline depends on and to know where the input files, etc. are located. To run this tutorial, you must copy this repository to a directory of your choice. To do this, please execute:
 
-`git clone https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022.git`
+`git clone https://github.com/siriusb-nox/ONT-workshop-Oct-2023.git`
 
 **For users with programs installed in a UNIX environment on personal computers**, these can be entered in the current session (terminal) using the following command, for example:
 

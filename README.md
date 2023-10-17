@@ -36,8 +36,8 @@ D. [**Genome search and/or annotation operations**](https://github.com/siriusb-n
 ![Figure 1](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/pipeline_overview_v0_OP_16102023.png?raw=true)
 **Figure 1**: Simplified view of tutorial/pipeline
 
->[!NOTE]
->**IMPORTANT: The base data needed to run this tutorial is available in the different subfolders of this repo (e.g., `NGS` and `NanoPlot`). Some files need to be downloaded from a google drive folder. The link to such files is provided in the `README.md` files of each subdfolder**
+>[!IMPORTANT]
+>**The base data needed to run this tutorial is available in the different subfolders of this repo (e.g., `NGS` and `NanoPlot`). Some files need to be downloaded from a google drive folder. The link to such files is provided in the `README.md` files of each subdfolder**
 
 ## 2.1. Pipeline configuration
 In any bioinformatics pipeline, it is essential to relate which programs the pipeline depends on and to know where the input files, etc. are located. To run this tutorial, you must copy this repository to a directory of your choice (ideally `/home/ontasia*/Documents`). To do this, please execute:

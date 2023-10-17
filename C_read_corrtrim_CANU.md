@@ -9,7 +9,9 @@ There are several programs that can operate with ONT reads. In this workshop, we
 
 In this section of the workshop, we will correct, trim and assemble a small subset of the _Artocarpus altilis_ dataset sequenced from a sample collected in a dry environment (WGS17). This will enable is to use `canu` for correction, trimming and assembly. We will aim to assemble the plastid genome of _A. altilis_!
 
-The data required to run this section is available in the folder `NGSdat/fastq_subset/` of your local directory. These are fastq files contain reads that match the plastid genome.
+
+>[!IMPORTANT]
+>The data required to run this section should be made available in the folder `NGSdat/fastq_subset/` of your local directory. These are `*.fastq` files contain reads that match the plastid genome. These files are available [here](https://drive.google.com/file/d/1om15NZPe6w4jbHM62FbrrkTNBU_3-3pc/view?usp=sharing). Make sure to download it and store in the `NGSdat/canu_fastq` directory in your local machine (have a look at the `README.md` file in the folder `canu_fastq` folder of this repo).
 
 To run the program in correction mode, use:
 

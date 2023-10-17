@@ -25,7 +25,7 @@ where:
 -dbtype # specify the type of database to be constructed (nucleotide, protein)
 ```
 
-3.a. Align the ONT reads against the local blast database created on step 2, using `magicblast` (unlike `blastn`, this program can use *fastq inout files). An example of a command is the following: 
+3.a. Align the ONT reads against the local blast database created on step 2, using `magicblast` (unlike `blastn`, this program can use *fastq input files). An example of a command is the following: 
 
 ```
 magicblast -query input_ONT.fastq -db refDB.out -out blast.search.out -outfmt tabular -no_unaligned -infmt fastq
@@ -51,7 +51,11 @@ The output should be a tab delimited file, and will look like this.
 8e298d68-42ba-4ee1-9641-c39f4bc490a1    NC_059002.1     74.7208 0       0       0       28      1004    55340   54373   0       99      572     plus    minus   13962   61G-26GA1TG2-A2GA27C-G-1TA2CA26GC3C-35A-21-A16-T-A8T-T-G-1CA18AG2CAAG1-A7AT1T-18_216_%210%106CT62-G87-A31CAAG126C-T-19-T26   1       -       1:1     AGCAATACGTAACTGAACGAAGCCACA     CCTCGTGTCCAAAGTATGAAGATTTCCCTA  -       -       572
 ```
 
-3.b. Align the ONT reads, using NCBI remote services. To this end, we need to rely on the blast tool of NCBI, because is the only capable of searching across multiple databases. The *fastq reads need to be converted first to fasta format. 
+3.b. Align the ONT reads, using NCBI remote services. To this end, we need to rely on the blast tool of NCBI, because is the only capable of searching across multiple databases. The *fastq reads need to be converted first to fasta format. To do this, try the following.
+
+```bash
+cat input.fastq | paste - - - - |cut -f 1, 2| sed 's/@/>/'g | tr -s "/t" "/n" > output.fasta
+```
 
 We will try to find out how many of the ONT read data does mat NCBI remote search againts the "nu" database. 
 

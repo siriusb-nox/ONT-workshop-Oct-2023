@@ -54,8 +54,9 @@ The output should be a tab delimited file, and will look like this.
 3.b. Align the ONT reads, using NCBI remote services. To this end, we need to rely on the blast tool of NCBI, because is the only capable of searching across multiple databases. The *fastq reads need to be converted first to fasta format. To do this, try the following.
 
 ```bash
-cat input.fastq | paste - - - - |cut -f 1, 2| sed 's/@/>/'g | tr -s "/t" "/n" > output.fasta
+cat input.fastq | paste - - - - | cut -f 1,2 | sed 's/@/>/g' | tr -s "/t" "/n" > output.fasta
 ```
+**Try now to code a _for_ loop to convert all fastq files into fasta in one go.**
 
 We will try to find out how many of the ONT read data does mat NCBI remote search againts the "nu" database. 
 

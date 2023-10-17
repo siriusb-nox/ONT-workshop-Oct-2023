@@ -36,6 +36,7 @@ D. [**Genome search and/or annotation operations**](https://github.com/siriusb-n
 ![Figure 1](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/pipeline_overview_v0_OP_16102023.png?raw=true)
 **Figure 1**: Simplified view of tutorial/pipeline
 
+[!NOTE]
 **IMPORTANT: The base data needed to run this tutorial is available in the different subfolders of this repo (e.g., `NGS` and `NanoPlot`). Some files need to be downloaded from a google drive folder. The link to such files is provided in the `README.md` files of each subdfolder**
 
 ## 2.1. Pipeline configuration
@@ -45,7 +46,7 @@ In any bioinformatics pipeline, it is essential to relate which programs the pip
 
 **For users with programs installed in a UNIX environment on personal computers**, these can be entered in the current session (terminal) using the following command, for example:
 
-`PATH=$PATH:/directory/of/the/folder/programax`
+`PATH=$PATH:/directory/of/the/folder/programx`
 
 For this particular workshop, users with Dell Laptops should run the following lines to add the dependencies to ENV:
 

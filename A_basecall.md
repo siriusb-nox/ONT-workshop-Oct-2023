@@ -99,4 +99,8 @@ The program will repeat the following message:
 ### ACTIVITY
 1. Basecall again reads from the file FAT98192_pass_deec7cb2_ec30cd82_101.pod5, but using a quality threshold value of 20 (parameter `--min-qscore 20`).
 2. Count how many low quality reads were excluded by comparing the number of reads produced by the default settings command (i.e., `--min-qscore 0`) and by applying a quality threshold value. To complete this task, you might want to use `grep` and `wc` programs.
+3. Now that we have found how many reads were lost using different quality thresholds, let's try to find out how many bases where lost. The following command can do the trick:
+   
+`cat input.fastq | paste - - - - | cut -f2 | wc -c`
 
+Your job is to execute this command for the Q0 and Q20 files, using a `for` loop.  

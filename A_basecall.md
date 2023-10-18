@@ -104,3 +104,6 @@ The program will repeat the following message:
 `cat input.fastq | paste - - - - | cut -f2 | wc -c`
 
 Your job is to execute this command for the Q0 and Q20 files, using a `for` loop.  
+
+>[!NOTE]
+>SEMANGAT!!

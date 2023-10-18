@@ -7,7 +7,7 @@
 ## 1. Introduction
 This repository contains a tutorial guide to the analysis of raw data derived from Oxford Nanopore Technologies (ONT) and the initial steps for conducting a genome assembly. Additionally, it includes a real example of ONT data application/usability e.g., conducting sequence searches on a predetermined database using ncbi blast to determine the identiy of an organism sequenced using ONT. 
 
-This tutorial is intended for users with a basic knowledge in programming and is designed to run in UNIX environments. The participant should ideally have experience using shell, and text file manipulation (e.g., using **awk, sed, grep, among others**). The workshop will be run on pre-configured laptops (Ubuntu 22.04). _A basic introduction to the UNIX enviroment with some useful commands is available [here](https://github.com/siriusb-nox/Taller-Oxford-Nanopore-Dec-2022/blob/main/bash_tutorial.md)_. 
+This tutorial is intended for users with a basic knowledge in programming and is designed to run in UNIX environments. The participant should ideally have experience using shell, and text file manipulation (e.g., using **awk, sed, grep, among others**). The workshop will be run on pre-configured laptops (Ubuntu 22.04). _A basic introduction to the UNIX enviroment with some useful commands is available [here](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/bash_tutorial.md)_. 
 
 This tutorial requires the following programs/dependencies (it is highly recommended to have these installed before starting the tutorial). **Please make sure that the dependencies on which these programs run are also available**:
 

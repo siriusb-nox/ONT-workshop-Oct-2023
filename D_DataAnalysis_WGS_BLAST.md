@@ -52,7 +52,6 @@ The output should be a tab delimited file, and will look like this.
 ```
 
 **Try now to code a _for_ loop to blast all the files in one like of code. Then, using the `magicblast` output, try to find out how many fastsq sequences match the genome of A. heterophyllus!** You might want to use `awk`, `sort`, `cut` and/or `wc` to do this task.
-
 <!-- [!WARNING] >![Figure 1](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/Screenshot%202023-10-19%20at%2010.15.16.png?raw=true) -->
 
 3.b. Align the ONT reads, using NCBI remote services. To this end, we need to rely on the blast tool of NCBI, because is the only capable of searching across multiple databases. The *fastq reads need to be converted first to fasta format. To do this, try the following.
@@ -60,13 +59,19 @@ The output should be a tab delimited file, and will look like this.
 ```bash
 cat input.fastq | paste - - - - | cut -f 1,2 | sed 's/@/>/g' | tr -s "/t" "/n" > output.fasta
 ```
+
 >[!NOTE]
 >**In this workshop, we will work with a subset of fasta reads derived from our sequence data of A. altilis WGS17 sequencing experiment.** The file is available in the [NGSdat folder](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/NGSdat/A_altilis_CP.unitigs.fasta) of this repository.
 
-We will try to find out how many of the ONT read data does mat NCBI remote search againts the "nu" database. 
+We will try to find out how many of the ONT read data does mat NCBI remote search againts the "nu" database. Here, is important to have access to an NCBI account and an API key. Using an API key will enable higher number of sequence searches per second agains the online databases. To introduce your API key in PATH, use:
 
 ```bash
 export NCBI_API_KEY=09ddca88b438c887b83f8d58fcc890c321XX
+```
+
+To execute blast in remote mode, use: 
+
+```bash
 blastn -query FAT98192_pass_deec7cb2_ec30cd82_9.fasta -db nt -remote -task blastn-short -evalue 0.01 -entrez_query "Artocarpus [organism]" -outfmt 6 -out blast_result_misteriousplant.table -max_target_seqs 10 -max_hsps 5
 ```
 

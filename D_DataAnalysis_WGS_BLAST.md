@@ -82,7 +82,9 @@ The output of this analysis will look lije this:
 ```
 
 ## D.1. ONT DATA ANALYSIS: PLASTID GENOME ANNOTATION
+Genome annotation is the process of obtaining functions and structures of a genome. It is an essential step towards the completion of a genome assembly because assemblies come without such information. 
 
+One of the most popular tools for plastid genome annotation is `GetSeq` from the CHLOROBOX tool kit. 
 
 
 

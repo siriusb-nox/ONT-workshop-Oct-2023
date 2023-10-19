@@ -54,6 +54,7 @@ The output should be a tab delimited file, and will look like this.
 **Try now to code a _for_ loop to blast all the files in one like of code. Then, using the `magicblast` output, try to find out how many fastsq sequences match the genome of A. heterophyllus!** You might want to use `awk`, `sort`, `cut` and/or `wc` to do this task.
 
 >[!WARNING]
+>
 > <semangnat!> 
 >        \   ^__^
 >         \  (oo)\_______

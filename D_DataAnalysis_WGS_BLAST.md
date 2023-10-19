@@ -87,7 +87,8 @@ Genome annotation is the process of obtaining functions and structures of a geno
 One of the most popular tools for organellar genome annotation is `GetSeq` from the [CHLOROBOX tool kit](https://chlorobox.mpimp-golm.mpg.de). The annotation occurs by comparing a submitted genome assembly with those available in the NCBI database and curated by `GetSeq`. In this last section of the workshop, we will learn how to annotate our own plastid genome assembly using `GetSeq`.
 
 ### ACTIVITY
-1. Have a good look at the assembled scaffolds produced by `canu` (it should be a file called `prefix.unitigs.fasta`, e.g., `A_altilis_CP.unitigs.fasta`. Find out how many scaffolds there are.
+1. Have a good look at the assembled scaffolds produced by `canu` (it should be a file called `prefix.unitigs.fasta`, e.g., `A_altilis_CP.unitigs.fasta`. **Find out how many scaffolds there are.** Is there any scaffold that matches the known genome size of a plastome? (hint: use `grep`for this task).
+   
 
 
 

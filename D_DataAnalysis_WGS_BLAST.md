@@ -84,7 +84,10 @@ The output of this analysis will look lije this:
 ## D.1. ONT DATA ANALYSIS: PLASTID GENOME ANNOTATION
 Genome annotation is the process of obtaining functions and structures of a genome. It is an essential step towards the completion of a genome assembly because assemblies come without such information. 
 
-One of the most popular tools for organellar genome annotation is `GetSeq` from the [CHLOROBOX tool kit](https://chlorobox.mpimp-golm.mpg.de). The annotation occurs by comparing a submitted genome assembly with those available in the NCBI database and curated by `GetSeq`. 
+One of the most popular tools for organellar genome annotation is `GetSeq` from the [CHLOROBOX tool kit](https://chlorobox.mpimp-golm.mpg.de). The annotation occurs by comparing a submitted genome assembly with those available in the NCBI database and curated by `GetSeq`. In this last section of the workshop, we will learn how to annotate our own plastid genome assembly using `GetSeq`.
+
+### ACTIVITY
+
 
 
 

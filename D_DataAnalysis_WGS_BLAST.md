@@ -62,8 +62,23 @@ We will try to find out how many of the ONT read data does mat NCBI remote searc
 
 ```bash
 export NCBI_API_KEY=09ddca88b438c887b83f8d58fcc890c321XX
-blastn -query misterious_seqs.ONT.fasta -db nt -remote -task blastn-short -evalue 0.01 -entrez_query "Asparagales [organism]" -outfmt 6 -out blast_result_misteriousplant.table -max_target_seqs 10 -max_hsps 5
+blastn -query FAT98192_pass_deec7cb2_ec30cd82_9.fasta -db nt -remote -task blastn-short -evalue 0.01 -entrez_query "Artocarpus [organism]" -outfmt 6 -out blast_result_misteriousplant.table -max_target_seqs 10 -max_hsps 5
 ```
+
+where:
+
+```bash
+-query # your input ONT reads (fasta format)
+-remote # conduct an online search remotely
+-task # optimise for a particular analysis (here short read data, is faster)
+-evalue # value to exclude poor sequence matches
+-db # your blast database (created on step 2)
+-out # your output namefile
+-outfmt # output format (table)
+-max_target_seqs # Number of aligned sequences to keep.
+-max_hsps # Maximum number of HSPs (alignments) to keep for any single query-subject pair.
+```
+
 
 The output of this analysis will look lije this:
 

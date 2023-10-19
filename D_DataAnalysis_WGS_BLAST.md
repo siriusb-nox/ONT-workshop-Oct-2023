@@ -88,11 +88,18 @@ One of the most popular tools for organellar genome annotation is `GetSeq` from 
 
 ### ACTIVITY
 1. Have a good look at the assembled scaffolds produced by `canu` (it should be a file called `prefix.unitigs.fasta`, e.g., `A_altilis_CP.unitigs.fasta`. **Find out how many scaffolds there are.** Is there any scaffold that matches the known genome size of a plastome? (hint: use `grep`for this task).
-2. Try to extract from this file the sequence that matches in size the size of a plastome. To this end, you would like to first convert your fasta file from interleave (DNA sequence in multiple lines) to sequential (DNA seq in a single line). Use the following command to do so.
+2. Try to extract from this file the sequence that matches in size the size of a regular plastome (~160,000 bp). To this end, you would like to first convert your fasta file from interleave (DNA sequence in multiple lines) to sequential (DNA seq in a single line). Use the following command to do so.
 
 ```bash
 awk '{if(NR==1) {print $0} else {if($0 ~ /^>/) {print "\n"$0} else {printf $0}}}' input.interleaved.fasta > output.singleline.fasta
 ```
+
+3. This sequence is ready to be uploaded into the [GetSeq](https://chlorobox.mpimp-golm.mpg.de/geseq.html) webpage.
+
+<p align="center">
+ <img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/getseq_chlorobox_screenshot.png" alt="A screenshot of the GetSeq web page"/>
+</p>
+
 
 
 

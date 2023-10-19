@@ -55,10 +55,10 @@ The output should be a tab delimited file, and will look like this.
 
 >[!WARNING]
 ><p align="left">
-> <img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/Screenshot%202023-10-19%20at%2009.53.27.png" alt="A screenshot of the GetSeq web page"/>
+<img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/Screenshot%202023-10-19%20at%2009.53.27.png" alt="A screenshot of the GetSeq web page"/>
 </p>
-><p align="left">
-> <img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/Screenshot%202023-10-19%20at%2010.15.16.png" alt="A screenshot of the GetSeq web page"/>
+><p align="right">
+<img src="https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/Screenshot%202023-10-19%20at%2010.15.16.png" alt="A screenshot of the GetSeq web page"/>
 </p>
 
 

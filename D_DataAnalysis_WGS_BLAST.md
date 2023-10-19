@@ -53,10 +53,7 @@ The output should be a tab delimited file, and will look like this.
 
 **Try now to code a _for_ loop to blast all the files in one like of code. Then, using the `magicblast` output, try to find out how many fastsq sequences match the genome of A. heterophyllus!** You might want to use `awk`, `sort`, `cut` and/or `wc` to do this task.
 
->[!WARNING]
->![Figure 1](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/Screenshot%202023-10-19%20at%2010.15.16.png?raw=true)
-
-
+<div >[!WARNING] >![Figure 1](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/Screenshot%202023-10-19%20at%2010.15.16.png?raw=true)</div>
 
 3.b. Align the ONT reads, using NCBI remote services. To this end, we need to rely on the blast tool of NCBI, because is the only capable of searching across multiple databases. The *fastq reads need to be converted first to fasta format. To do this, try the following.
 

@@ -60,7 +60,8 @@ The output should be a tab delimited file, and will look like this.
 ```bash
 cat input.fastq | paste - - - - | cut -f 1,2 | sed 's/@/>/g' | tr -s "/t" "/n" > output.fasta
 ```
-**Try now to code a _for_ loop to convert all fastq files into fasta in one go.**
+>[!NOTE]
+>**In this workshop, we will work with a subset of fasta reads derived from our sequence data of A. altilis WGS17 sequencing experiment.** The file is available in the [NGSdat folder](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/NGSdat/A_altilis_CP.unitigs.fasta) of this repository.
 
 We will try to find out how many of the ONT read data does mat NCBI remote search againts the "nu" database. 
 
